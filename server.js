@@ -74,8 +74,9 @@ async function startServer() {
       process.exit(1)
     }
 
+    console.log("Trying to connect to Mongo...")
     await client.connect()
-    console.log("MongoDB connected")
+    console.log("MongoDB connected successfully")
 
     app.post('/auth/register', async (req, res) => {
       try {
