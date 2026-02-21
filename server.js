@@ -20,9 +20,9 @@ app.use(cors({
 app.use(express.json())
 app.use(cookieParser())
 
-const url = process.env.Mongo_URI
+const url = process.env.MONGO_URI
 if (!url) {
-  console.error('Missing Mongo_URI in environment variables')
+  console.error('Missing MONGO_URI in environment variables')
   process.exit(1)
 }
 
