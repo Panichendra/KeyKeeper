@@ -43,8 +43,8 @@ const createToken = (user) => {
 const setAuthCookie = (res, token) => {
   res.cookie('auth_token', token, {
     httpOnly: true,
-    sameSite: 'lax',
-    secure: isProduction,
+    sameSite: 'none',
+    secure: true,
     maxAge: cookieMaxAgeMs
   })
 }
