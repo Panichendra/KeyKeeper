@@ -39,4 +39,4 @@ A full-stack password management web application built using **React (Vite)** fo
 
 ---
 
-## 📁 Project Structure
+
